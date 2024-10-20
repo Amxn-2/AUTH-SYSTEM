@@ -8,13 +8,15 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # Ignore root node_modules
-/node_modules/
+/node_modules
 
 # Ignore frontend node_modules
 /frontend/node_modules/
 
 # Ignore backend .env
 /backend/.env
+
+
 
 
 # Editor directories and files

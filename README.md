@@ -1,7 +1,7 @@
 
 # Authentication System
 
-A full-stack authentication system built with Express.js (backend) and Vite-React.js (frontend). This project provides user authentication with hardcoded logic and integrates with MongoDB for data storage. It includes features like signup, login, email verification, password reset, and protected routes.
+A full-stack authentication system built with Express.js (backend) and Vite-React.js (frontend). This project provides secure user authentication using JWT and integrates with MongoDB for data storage. It includes features like signup, login, email verification, password reset, and protected routes.
 
 ## Table of Contents
 
@@ -22,6 +22,7 @@ A full-stack authentication system built with Express.js (backend) and Vite-Reac
 - Email verification system.
 - Password reset and forgot password flow.
 - MongoDB integration for data storage.
+- Token-based authentication using JWT.
 - Responsive UI with React (Vite).
 - Protected routes for authenticated users.
 
@@ -30,6 +31,7 @@ A full-stack authentication system built with Express.js (backend) and Vite-Reac
 - **Backend**: Node.js, Express.js
 - **Frontend**: Vite, React.js
 - **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
 - **Email Service**: Mailtrap (for testing email functionality)
 - **Environment Configuration**: dotenv
 
@@ -82,6 +84,14 @@ MAILTRAP_TOKEN=<Your Mailtrap Token>
 MAILTRAP_ENDPOINT=<Your Mailtrap API Endpoint>
 CLIENT_URL=http://localhost:5173
 ```
+Replace the placeholder values with your actual credentials and tokens:
+
+- `MONGO_URI`: The connection string to your MongoDB instance.
+- `JWT_SECRET`: A secret key for signing JWT tokens.
+- `MAILTRAP_TOKEN`: Your Mailtrap API token for testing email functionality.
+- `MAILTRAP_ENDPOINT`: The Mailtrap API endpoint.
+- `CLIENT_URL`: The URL where your frontend app will be hosted (default: `http://localhost:5173`).
+
 
 ## Running the Project
 
